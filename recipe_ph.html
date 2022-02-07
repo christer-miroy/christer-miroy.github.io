@@ -23,13 +23,13 @@
                     <a class="nav-link" href="index.html" target="_blank">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link"  href="bootstrapboard.html" target="_blank">Community Board</a>
+                    <a class="nav-link"  href="communityboard.html" target="_blank">Community Board</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="bootstrap_recipes.html">Recipes</a>
+                    <a class="nav-link active" aria-current="page" href="recipes.html">Recipes</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="bootstrap_eatventures.html" target="_blank">EatVentures</a>
+                    <a class="nav-link" href="eatventures.html" target="_blank">EatVentures</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="bootstrap_contactus.html" target="_blank">Contact Us</a>
@@ -62,7 +62,7 @@
               <a class="nav-link" href="#">Myanmar</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="bootstrap_recipe_ph.html" aria-current="page"><b>Philippines</b></a>
+              <a class="nav-link active" href="recipe_ph.html" aria-current="page"><b>Philippines</b></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Singapore</a>
@@ -76,55 +76,83 @@
           </ul>
     </div><!--end header and nav-->
     <!--article-->
-    <div class="container-fluid m-4"> <!--image overlay-->
-        <div class="card bg-dark text-white">
-            <img src="jeep.jpg" class="card-img" alt="jeep" height="350px"><!--image card-->
-            <div class="card-img-overlay  d-flex align-items-end m-4">
-              <h1 class="card-title">Philippines</h1>
-            </div>
-        </div><!--end image card-->
-        <div class="card m-4"><!--recipe body-->
-            <div class="container"> <!--recipe grid-->
-                <div class="row"><!--recipe grid row 1-->
-                  <div class="col-sm-4"><!--recipe 1-->
-                    <div class="card m-3" style="max-width: 540px;"><!--recipe card-->
-                        <div class="row g-0">
-                          <div class="col-md-4">
-                            <img src="pandesal.jpg" class="img-fluid rounded-start" alt="pandesal">
-                          </div>
-                          <div class="col-md-8">
-                            <div class="card-body">
-                              <h5 class="card-title">Pandesal</h5>
-                              <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, sint repellendus! Laborum voluptate suscipit, totam eum similique tenetur ad. Adipisci, debitis nobis minus sit excepturi veniam nihil porro ut est.</p>
-                              <p class="card-text"><a href="pandesalph.html" target="_blank">See Full Recipe</a></p>
-                            </div>
-                          </div>
-                        </div>
-                      </div><!--end recipe card-->
-                  </div><!--end recipe 1-->
-                  <div class="col-sm-4"><!--recipe 2-->
-                    <div class="card m-3" style="max-width: 540px;">
-                        <div class="row g-0">
-                          <div class="col-md-4">
-                            <img src="palabok.jpg" class="img-fluid rounded-start" alt="palabok">
-                          </div>
-                          <div class="col-md-8">
-                            <div class="card-body">
-                              <h5 class="card-title">Palabok</h5>
-                              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reiciendis, atque commodi sed non provident nostrum adipisci ratione enim accusamus eos repellendus ipsam labore natus laborum necessitatibus quia nobis numquam?</p>
-                              <p class="card-text"><a href="#">See Full Recipe</a></p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                  </div><!--end recipe 2-->
-                  <div class="col-sm-4"><!--recipe 3-->
-                    Column
-                  </div><!--end recipe 3-->
-                </div><!--end recipe grid row 1-->
-              </div><!--end recipe grid-->
-          </div><!--end recipe body-->
+    <div class="container-fluid m-4"><!--parent container of article-->
+      <div class="rows d-flex flex-sm-row"><!--create sidebar summary of recipes-->
+        <div class="col-sm-2"><!--sidebar of previously uploaded recipes-->
+          <h5>Previously uploaded recipes</h5>
+          <ul class="list-group">
+            <li class="list-group-item"><a href="recipe_ph_pandesal.html" target="_blank">Pandesal</a></li>
+            <li class="list-group-item"><a href="#">Tortang Talong</a></li>
+            <li class="list-group-item"><a href="#">Lechon Kawali</a></li>
+            <li class="list-group-item"><a href="#">Palabok</a></li>
+            <li class="list-group-item"><a href="#">Isaw</a></li>
+            <li class="list-group-item"><a href="#">Laing</a></li>
+            <li class="list-group-item"><a href="#">Pinakbet</a></li>
+          </ul>
+        </div><!--end sidebar-->
+        <div class="col-sm-10"><!--newly uploaded recipes-->
+          <div class="row"><!--row 1, 3 recipes-->
+            <div class="col-sm-4"><!--recipe 1-->
+              <div class="row m-4"><!--content of recipe 1-->
+                <div class="col-sm-3"><!--image container-->
+                  <img src="pandesal.jpg" class="img-fluid" alt="pandesal">
+                </div><!--end image container-->
+                <div class="col-sm-9"><!--text container-->
+                  <h5>Pandesal</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis aut esse perferendis temporibus nisi reiciendis repudiandae! Fugit molestiae quas porro eius omnis? Iusto ducimus quam laboriosam consequuntur obcaecati, laborum rem.</p>
+                  <p><a href="recipe_ph_pandesal.html">See full recipe</a></p>
+                </div><!--end text container-->
+              </div><!--end content recipe 1-->
+            </div><!--end recipe 1-->
+            <div class="col-sm-4"><!--recipe 2-->
+              <div class="row m-4"><!--content of recipe 2-->
+                <div class="col-sm-3"><!--image container-->
+                  <img src="tortangtalong.jpg" class="img-fluid" alt="tortangtalong">
+                </div><!--end image container-->
+                <div class="col-sm-9"><!--text container-->
+                  <h5>Tortang Talong</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis aut esse perferendis temporibus nisi reiciendis repudiandae! Fugit molestiae quas porro eius omnis? Iusto ducimus quam laboriosam consequuntur obcaecati, laborum rem.</p>
+                  <p><a href="#">See full recipe</a></p>
+                </div><!--end text container-->
+              </div><!--end content recipe 2-->
+            </div><!--end recipe 2-->
+            <div class="col-sm-4"><!--recipe 3-->
+              <div class="row m-4"><!--content of recipe 3-->
+                <div class="col-sm-3"><!--image container-->
+                  <img src="lechonkawali.jpg" class="img-fluid" alt="lechonkawali">
+                </div><!--end image container-->
+                <div class="col-sm-9"><!--text container-->
+                  <h5>Lechon Kawali</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis aut esse perferendis temporibus nisi reiciendis repudiandae! Fugit molestiae quas porro eius omnis? Iusto ducimus quam laboriosam consequuntur obcaecati, laborum rem.</p>
+                  <p><a href="#">See full recipe</a></p>
+                </div><!--end text container-->
+              </div><!--end content recipe 3-->
+            </div><!--end recipe 3-->
+            <div class="col-sm-4"><!--recipe 4-->
+              <div class="row m-4"><!--content of recipe 4-->
+                <div class="col-sm-3"><!--image container-->
+                  <img src="palabok.jpg" class="img-fluid" alt="palabok">
+                </div><!--end image container-->
+                <div class="col-sm-9"><!--text container-->
+                  <h5>palabok</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis aut esse perferendis temporibus nisi reiciendis repudiandae! Fugit molestiae quas porro eius omnis? Iusto ducimus quam laboriosam consequuntur obcaecati, laborum rem.</p>
+                  <p><a href="#">See full recipe</a></p>
+                </div><!--end text container-->
+              </div><!--end content recipe 4-->
+            </div><!--end recipe 4-->
+          </div><!--end row-->
+        </div><!--end newly uploaded recipes-->
     </div><!--end article-->
+    <!--footer-->
+    <div class="container-fluid mt-4"><!--parent container of footer-->
+      <div class="card sticky-bottom">
+        <div class="card-footer text-center">
+          Images and videos presented in this website are used for educational purposes only.<br>
+          No copyright infringemenet intended.
+        </div>
+      </div>
+    </div><!--end footer-->
+    </div>
       </div><!--end parent container of all sections-->
     
 
