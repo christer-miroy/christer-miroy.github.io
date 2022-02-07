@@ -1,0 +1,27 @@
+*
+.carousel-item /*to adjust the height of the carousel*/
+{
+    height: 25rem;
+    background-color: #777;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+.carousel-item-text
+{
+    color: white;
+    font-weight: bold;
+}
+.card-img-top /*adjust height and width of image*/
+{
+    height: 100px;
+    width: 100px;
+}
+.card-text
+{
+    grid-area: card-text;
+}
+.btn /*adjust width of the button according to text*/
+{
+    width: 250px;
+}
