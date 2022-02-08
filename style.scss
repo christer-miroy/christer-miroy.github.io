@@ -1,0 +1,45 @@
+$bgcolor: rgb(165, 240, 142);
+$bgcard:rgb(208, 228, 135);
+@mixin card-img-top_size
+{
+    height: 200px;
+    width: 150px;
+}
+body
+{
+    background-color: $bgcolor;
+}
+.card-img-top
+{
+    @include card-img-top_size;
+}
+@mixin carousel_mixin
+{
+    height: 25rem;
+    background-color: #777;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+.carousel-item
+{
+    @include carousel_mixin;
+}
+@mixin cartext
+{
+    color: white;
+    font-weight: bold;
+}
+.carousel-item-text
+{
+    @include cartext;
+}
+.card
+{
+    background-color: $bgcard;
+}
+navbar
+{
+    background-color: $bgcolor;
+    font-weight: bold;
+}

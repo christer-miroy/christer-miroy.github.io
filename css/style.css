@@ -1,0 +1,29 @@
+body {
+  background-color: #a5f08e;
+}
+
+.card-img-top {
+  height: 200px;
+  width: 150px;
+}
+
+.carousel-item {
+  height: 25rem;
+  background-color: #777;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+}
+
+.carousel-item-text {
+  color: white;
+  font-weight: bold;
+}
+
+.card {
+  background-color: #d0e487;
+}
+
+navbar {
+  background-color: #a5f08e;
+}
