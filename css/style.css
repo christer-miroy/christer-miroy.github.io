@@ -53,3 +53,7 @@ a:hover {
   border-style: double;
   color: black;
 }
+
+.card-header {
+  border-bottom: 0px;
+}
