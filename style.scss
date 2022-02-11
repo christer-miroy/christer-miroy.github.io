@@ -58,3 +58,13 @@ a
 {
     border-style: none;
 }
+.nav-link:hover
+{
+    border-style: double;
+    color: $txtcolor;
+}
+a:hover
+{
+    border-style: double;
+    color: $txtcolor;
+}

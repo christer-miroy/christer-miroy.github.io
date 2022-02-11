@@ -43,3 +43,13 @@ a {
 .card {
   border-style: none;
 }
+
+.nav-link:hover {
+  border-style: double;
+  color: black;
+}
+
+a:hover {
+  border-style: double;
+  color: black;
+}
